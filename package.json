@@ -1,0 +1,13 @@
+{
+  "name": "vidtube-api",
+  "version": "1.0.0",
+  "description": "Video extraction API for Vercel",
+  "main": "vercel_api.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}

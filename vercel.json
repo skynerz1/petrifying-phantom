@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "vercel_api.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "builds": [
+    {
+      "src": "vercel_api.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "vercel_api.js"
+    }
+  ]
+}
